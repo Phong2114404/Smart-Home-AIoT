@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/nhietdo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="#ff0000"
+            android:text="Nhiệt Độ"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/txtTemperature"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="4"
+            android:background="#3F51B5"
+            android:gravity="center"
+            android:text="70 %"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/anhsang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="#ff0000"
+            android:text="Ánh Sáng"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/txtLight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="4"
+            android:background="#673AB7"
+            android:gravity="center"
+            android:text="15 %"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/khoangcach"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="#ff0000"
+            android:text="Khoảng Cách"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="4"
+            android:background="#009688"
+            android:gravity="center"
+            android:text="0 cm"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/MODE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="23"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="MODE"
+            android:textColor="#E91E63"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnauto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="25dp"
+            app:textOn = "Auto"
+            app:textOff = "Manual"
+            app:on="false"
+            app:colorBorder="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ledcontrol"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="23"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="LED"
+            android:textColor="#E91E63"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnLed1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"
+            app:textOn = "Bật"
+            app:textOff = "Tắt"
+            app:on="false"
+            app:colorBorder="@color/teal_700"/>
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnLed2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"
+            app:textOn = "Bật"
+            app:textOff = "Tắt"
+            app:on="false"
+            app:colorBorder="@color/teal_700"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnLed3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"
+            app:textOn = "Bật"
+            app:textOff = "Tắt"
+            app:on="false"
+            app:colorBorder="@color/teal_700"/>
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btnLed4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"
+            app:textOn = "Bật"
+            app:textOff = "Tắt"
+            app:on="false"
+            app:colorBorder="@color/teal_700"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+<!--        <SeekBar-->
+<!--            android:id="@+id/fanslider"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="28"-->
+<!--            android:max="100"-->
+<!--            android:padding="10dp" />-->
+        <TextView
+            android:id="@+id/doorcontrol"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="23"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="DOOR"
+            android:textColor="#E91E63"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/btndoor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="27dp"
+            app:textOn = "Mở"
+            app:textOff = "Đóng"
+            app:on="false"
+            app:colorBorder="@color/colorAccent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fancontrol"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="20"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="FAN"
+            android:textColor="#E91E63"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/fanslider"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="28"
+            android:max="100"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"></LinearLayout>
+
+
+
+
+</LinearLayout>
